@@ -2,7 +2,7 @@ module RMeetup
   module Fetcher
     class Events < Base
       def initialize
-        @type = :events
+        @type = :"2/events"
       end
       
       # Turn the result hash into a Event Class
