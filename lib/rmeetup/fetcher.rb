@@ -16,25 +16,25 @@ module RMeetup
       # Return a fetcher for given type
       def for(type)
         return  case type.to_sym
-                when :topics
-                  Topics.new
-                when :cities      
-                  Cities.new
-                when :members     
-                  Members.new
-                when :rsvps       
-                  Rsvps.new
-                when :events      
-                  Events.new
-                when :eventsingle
-                  EventSingle.new
-                when :groups      
-                  Groups.new
-                when :comments    
-                  Comments.new
-                when :photos
-                  Photos.new
-                end
+        when :topics
+          Topics.new
+        when :cities      
+          Cities.new
+        when :members     
+          Members.new
+        when :rsvps       
+          Rsvps.new
+        when :events      
+          Events.new
+        when :eventsingle
+          EventSingle.new
+        when :groups      
+          Groups.new
+        when :comments    
+          Comments.new
+        when :photos
+          Photos.new
+        end
       end 
     end
   end

@@ -1,8 +1,8 @@
 module RMeetup
   module Fetcher
     class EventSingle < Base
-      def initialize(event_id)
-        @type = :"2/event/#{event_id}"
+      def initialize
+        @type = :"2/event/"
       end
       
       # Turn the result hash into a EventSingle Class
